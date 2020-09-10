@@ -9,14 +9,8 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name = "user_table")
-public class User extends Audit {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class Programme{
     private int id;
-    private String fullname;
-    private String email;
-    private String phone;
-
+    private String title;
+    private String description;
 }
